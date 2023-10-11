@@ -66,7 +66,7 @@ $$
 For any pair $i, j \in [m], i < j $, we have: 
 
 $$
-\mathbb{E}  [D_{i, j}] = P(D_{i, j} = 1) = \frac{1}{n} \tag{3}
+\mathbb{E}  [D_{i, j}] = P(D_{i, j} = 1) = \frac{1}{n^2} \tag{3}
 $$
 
 because $i, j$ were drawn _independently with replacement_. 
@@ -74,7 +74,7 @@ because $i, j$ were drawn _independently with replacement_.
 This gives us 
 
 $$
-\mathbb{E}  [D] = \sum_{i, j \in [m], i < j} \mathbb{E}  [D_{i, j}]= \binom{m}{2} \frac{1}{n} = \frac{m(m-1)}{2n}  \tag{4}
+\mathbb{E}  [D] = \sum_{i, j \in [m], i < j} \mathbb{E}  [D_{i, j}]= \binom{m}{2} \frac{1}{n^2} = \frac{m(m-1)}{2n^2}  \tag{4}
 $$
 
 For the set $m$ elements, we choose any two from it, say $i, j$, there must be a case which either $i < j$ or $j < i$. Therefore, $\sum_{i, j \in [m], i < j}$ gives the combination of $\binom{m}{2}$. 
